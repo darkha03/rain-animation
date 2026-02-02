@@ -7,6 +7,7 @@ for (let i = 0; i < numberOfClouds; i++) {
     const animationDuration = `${Math.random() * 150 + 15}s`;
     const animationDelay = `${Math.random() * 2}s`;
     const index = Math.floor(Math.random() * 15); // Random z-index for layering
+    
     createCloud(index, left, top, animationDuration, animationDelay);
 }
 
@@ -18,6 +19,15 @@ function createCloud(index, left, top, animationDuration, animationDelay) {
   cloud.style.top = top;
   cloud.style.animationDuration = animationDuration;
   cloud.style.animationDelay = animationDelay;
+  if (index <= 5) {
+    cloud.style.opacity = 0.3;
+  } else if (index <= 10) {
+    cloud.style.opacity = 0.6;
+    cloud.style.setProperty('--cloud-blur', '10px');
+  } else {
+    cloud.style.opacity = 1;
+    cloud.style.setProperty('--cloud-blur', '5px');   
+  }
   const scale = 0.6 + Math.random() * 0.9; // 0.6–1.5x size variance
   cloud.style.setProperty('--cloud-scale', scale);
   cloud.addEventListener('animationiteration', () => {

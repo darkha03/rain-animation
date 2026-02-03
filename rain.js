@@ -23,7 +23,7 @@ function addFrontDrop(track) {
   drop.style.animationDelay = `${Math.random() * 2}s`;
   drop.style.opacity = Math.random() * 0.5 + 0.5;
   track.dataset.dropOpacity = drop.style.opacity;
-  const fallDistance = Math.random() * 20 + 80; 
+  const fallDistance = Math.random() * 10 + 90; 
   drop.style.setProperty('--fall-distance', `${fallDistance}vh`);
   track.dataset.fallDistance = fallDistance;
 
@@ -39,7 +39,7 @@ function addMiddleDrop(track) {
   drop.style.animationDelay = `${Math.random() * 2}s`;
   drop.style.opacity = Math.random() * 0.3 + 0.2;
   track.dataset.dropOpacity = drop.style.opacity;
-  const fallDistance = Math.random() * 15 + 65; 
+  const fallDistance = Math.random() * 10 + 80; 
   drop.style.setProperty('--fall-distance', `${fallDistance}vh`);
   track.dataset.fallDistance = fallDistance;
   // Spawn a splash every time the drop finishes a fall 
@@ -54,7 +54,7 @@ function addBackDrop(track) {
   drop.style.animationDelay = `${Math.random() * 2}s`;
   drop.style.opacity = Math.random() * 0.2 + 0.1;
   track.dataset.dropOpacity = drop.style.opacity;
-  const fallDistance = Math.random() * 15 + 50; 
+  const fallDistance = Math.random() * 10 + 70; 
   drop.style.setProperty('--fall-distance', `${fallDistance}vh`);
   track.dataset.fallDistance = fallDistance;
   // Spawn a splash every time the drop finishes a fall 

@@ -16,7 +16,7 @@ A lightweight, single-page rain scene that layers falling drops, splashes, drift
 
 ## Demo
 
-Demo video: [Watch here](https://github.com/user-attachments/assets/11cec559-987a-4a22-b51d-463f392a6ba9)
+https://github.com/user-attachments/assets/11cec559-987a-4a22-b51d-463f392a6ba9
 
 <video controls width="720">
 	<source src="https://github.com/user-attachments/assets/11cec559-987a-4a22-b51d-463f392a6ba9" type="video/mp4">
